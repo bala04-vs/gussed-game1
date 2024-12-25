@@ -1,0 +1,112 @@
+.article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+.guess-game-img{
+    width:40%;
+}
+
+.para{
+    font-size: 30px;
+}
+
+.box{
+    width:80vw;
+    background-color:rgb(88, 197, 244);
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   gap: 50px;
+    
+}
+
+.user-input{
+    font-size:20px;
+   text-align: center;
+    height: 50px;
+}
+
+.btn-info{
+
+    font-size: 300%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(23, 174, 174);
+    border-color: rgb(36, 208, 223);
+    color: antiquewhite;
+
+}
+
+.game-result{
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: white ;
+}
+
+
+@media  screen and (min-width:0px) and (max-width:475px){
+
+    .article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    
+    
+    
+    .guess-game-img{
+        width:100%;
+    }
+    
+    .para{
+        font-size: 30px;
+    }
+    
+    .box{
+        width:90vw;
+        background-color:rgb(88, 197, 244);
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+       gap: 50px;
+        
+    }
+    
+    .user-input{
+        font-size:15px;
+       text-align: center;
+        height: 50px;
+    }
+    
+    .btn-info{
+    
+        font-size: 300%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgb(23, 174, 174);
+        border-color: rgb(36, 208, 223);
+        color: antiquewhite;
+    
+    }
+    
+    .game-result{
+        padding: 20px;
+        text-align: center;
+        font-size: 30px;
+        color: white ;
+    }
+
+
+
+
+}
+    
+
+

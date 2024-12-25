@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css"></link>
+   
+</head>
+<body>
+
+    <article class="article">
+
+        
+            <img
+            class="guess-game-img"
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/guess-game-img.png"/>
+        
+    
+        <p class="para">            Find out the right number between 1 to 100
+        </p>
+
+        
+
+      
+
+        <div class="box">
+
+           <h1>Guess the number</h1>
+
+           <input type="text" class="user-input" id="userInput" />
+           <button class="btn-info" onclick="checkGuess()">
+            Check
+          </button>
+
+          <p class="game-result" id="gameResult"></p>
+
+        </div>
+
+
+
+
+    </article>
+
+
+
+    <script >
+
+        
+        
+   
+
+
+let gameResult = document.getElementById("gameResult");
+let userInput = document.getElementById("userInput");
+let randomNumber = Math.ceil(Math.random() * 100);
+function checkGuess() {
+  let guessedNumber = parseInt(userInput.value);
+  if (guessedNumber > randomNumber) {
+    gameResult.textContent = "Too High! Try Again.";
+    gameResult.style.backgroundColor = "#1e217c";
+  }
+  else if (guessedNumber < randomNumber) {
+    gameResult.textContent = "Too Low! Try Again.";
+    gameResult.style.backgroundColor = "#1e217c";
+  }
+  else if (guessedNumber === randomNumber) {
+    gameResult.textContent = "I love YOU UMA NUVVU ANTE CHALA ISTAM ITTLU NEE SANTHOSH";
+    gameResult.src=""
+    gameResult.style.backgroundColor = "green";
+
+  }
+  else {
+    gameResult.textContent = "Please provide a valid input.";
+    gameResult.style.backgroundColor = "#1e217c";
+  }
+}
+
+
+
+        
+        
+        </script>
+
+
+    
+</body>
+</html>
+
+
+
